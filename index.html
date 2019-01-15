@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>JSRadarMap</title>
+    <style type="text/css">
+        input[type="range"] {
+            display: block;
+            -webkit-appearance: none;
+            background-color: #bdc3c7;
+            width: 90%;
+            height: 15px;
+            border-radius: 5px;
+            margin: 0 auto;
+            outline: 0;
+        }
+
+        input[type="range"]::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            width: 22px;
+            height: 22px;
+            border-radius: 50%;
+            border: 0.5px solid red;
+            cursor: pointer;
+            transition: 0.1ms ease-in-out;
+        }
+
+        .range {
+            position: absolute;
+            height: 800px;
+            width: 800px;
+            border-style: solid;
+        }
+
+        #thecanvas {
+            position: absolute;
+            left: 100px;
+            top: 100px;
+            height: 600px;
+            width: 600px;
+        }
+
+        #cans {
+            position: absolute;
+            left: 100px;
+            top: 100px;
+            height: 600px;
+            width: 600px;
+        }
+
+        #cans1 {
+            position: absolute;
+            left: 100px;
+            top: 100px;
+            height: 600px;
+            width: 600px;
+        }
+
+        #cans2 {
+            position: absolute;
+            left: 100px;
+            top: 100px;
+            height: 600px;
+            width: 600px;
+        }
+        #radertextvalue{
+            position: absolute;
+            left: 9px;
+            top: 800px;
+        }
+        .inpu{
+            position: absolute;
+            left: 8px;
+            top: 815px;
+        }
+    </style>
+</head>
+
+<script>
+    flag = false;
+</script>
+
+<body id="thebody">
+
+<div class="range">
+    <canvas id="cans3"></canvas>
+    <canvas id="cans2"></canvas>
+    <canvas id="cans1"></canvas>
+    <canvas id="cans"></canvas>
+    <canvas id="thecanvas"></canvas>
+
+</div>
+<input class="inpu">
+<p id="radertextvalue"></p>
+</input>
+</body>
+
+<script src="can.js"></script>
+<script src="buttonclass.js"></script>
+
+</html>
